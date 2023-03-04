@@ -8,6 +8,11 @@ Algorithms for constraint based quantum evaluation.
 
 [Julian github notebook](https://github.com/ju2ez/quantum_annealing_sudoku/blob/main/quantum_annealing_sudoku_9x9.ipynb)
 
+In Sudoku we have a large number of constraints/rules which determine
+whether a proposed solution is valid or not. 
+
+$$\sum_{k=1}^N x_{ij,k} = 1, \forall i,j\in cell$$
+
 ...
 
 ## Graph coloring and Grover's search algorithm
