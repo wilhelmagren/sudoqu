@@ -11,7 +11,25 @@ Algorithms for constraint based quantum evaluation.
 In Sudoku we have a large number of constraints/rules which determine
 whether a proposed solution is valid or not. 
 
-$$\sum_{k=1}^N x_{ij,k} = 1, \forall i,j\in cell$$
+1. A single cell/box can only have one number
+
+$$\sum_{k=1}^N x_{ijk} = 1, \forall i,j\in cell$$
+
+2. Each column $j$ can not have duplicate numbers:
+
+$$\sum_{i=1}^Nx_{ijk} = 1, \forall j\in column, \forall k\in \{1,...,N\}$$
+
+3. Each row $i$ can not have duplicate numbers:
+
+$$\sum_{j=1}^Nx_{ijk} = 1, \forall i\in row, \forall k\in \{1,...,N\}$$
+
+4. Each of the nine 3x3 sub-grids can not have duplicate numbers:
+
+$$\sum_i^2\sum_j^nx_{(i+u)(j+v)k} = 1, \forall k\in \{1,...,N\}, \forall (u, v)\in\{0, 3, 6\}$$
+
+5. Initial numbers given as a hint cannot be changed:
+
+$$\sum_{x_{ijk}\in hints} x_{ijk} = 1$$
 
 ...
 
