@@ -8,6 +8,8 @@ Algorithms for constraint based quantum evaluation.
 
 [Julian github notebook](https://github.com/ju2ez/quantum_annealing_sudoku/blob/main/quantum_annealing_sudoku_9x9.ipynb)
 
+[D-Wave example](https://github.com/dwave-examples/sudoku)
+
 In Sudoku we have a large number of constraints/rules which determine
 whether a proposed solution is valid or not. 
 
